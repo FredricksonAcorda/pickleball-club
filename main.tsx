@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.css';
 import { ArrowDown, ArrowUpRight, Calendar, Clock, MapPin, Menu, Plus, ShieldCheck, Trophy, Users, X } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 import doublesMatchImg from './images/1.webp';
 import paddleRenderImg from './images/2.webp';
@@ -513,6 +515,8 @@ export default function App() {
           </a>
         </div>
       </footer>
+      <Analytics />
+      <SpeedInsights />
     </>
   );
 }
